@@ -51,7 +51,7 @@ function RegisterPage() {
                 <input
                   type="text"
                   placeholder="First name"
-                  className="border border-gray-400 h-12 pl-4 outline-none w-full"
+                  className="border rounded-lg border-gray-400 h-12 pl-4 outline-none w-full"
                   {...register("firstName", {
                     required: true,
                     minLength: 3,
@@ -85,7 +85,7 @@ function RegisterPage() {
                 <input
                   type="text"
                   placeholder="Last name"
-                  className="border border-gray-400 h-12 pl-4 outline-none w-full"
+                  className="border rounded-lg border-gray-400 h-12 pl-4 outline-none w-full"
                   {...register("lastName", {
                     required: true,
                     minLength: 3,
@@ -120,7 +120,7 @@ function RegisterPage() {
               <input
                 type="email"
                 placeholder="Email"
-                className="border mb-6 border-gray-400 h-12 pl-4 outline-none w-full"
+                className="border rounded-lg mb-6 border-gray-400 h-12 pl-4 outline-none w-full"
                 {...register("email", {
                   required: true,
                   pattern: /^\S+@\S+$/i,
@@ -143,7 +143,7 @@ function RegisterPage() {
               <input
                 type="password"
                 placeholder="Password"
-                className="border mb-6 border-gray-400 h-12 pl-4 outline-none w-full"
+                className="border rounded-lg mb-6 border-gray-400 h-12 pl-4 outline-none w-full"
                 {...register("password", {
                   required: true,
                   minLength: 10,
@@ -177,7 +177,7 @@ function RegisterPage() {
               <input
                 type="password"
                 placeholder="Confirm password"
-                className="border mb-6 border-gray-400 h-12 pl-4 outline-none w-full"
+                className="border rounded-lg mb-6 border-gray-400 h-12 pl-4 outline-none w-full"
                 {...register("confirmPassword", {
                   validate: (value) => value === watch("password"),
                 })}
